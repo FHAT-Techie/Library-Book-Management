@@ -1,0 +1,488 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* Remove default boldness */
+}
+
+ul, ol {
+    list-style: none; /* Remove default bullets and numbering */
+}
+
+table {
+    border-collapse: collapse; /* Collapse borders into a single border */
+    width: 100%; /* Make tables take full width */
+}
+
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+body{
+    background-color: #201C1D;
+}
+
+.header{
+    display: flex;
+padding: 1rem 4rem;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+background: #353334;
+}
+
+.logo h1{
+    color: var(--Schemes-Error-Container, #FFDAD6);
+font-family: Playball;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.logo span{
+    color: var(--Schemes-Error, #BA1A1A);
+font-family: Playball;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.searchCon input{
+    display: flex;
+width: 28.5625rem;
+padding: 0.5rem 1rem;
+align-items: center;
+gap: 0.625rem;
+border-radius: 1rem;
+background: #FFF;
+}
+.profile h6{
+    color: #FFF;
+text-align: right;
+font-family: Poppins;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.profile p {
+    color: #F9F9F9;
+text-align: right;
+font-family: Poppins;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+align-self: stretch;
+line-height: normal;
+}
+.profile{
+    display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+.mainBody h1{
+    color: var(--Schemes-Scrim, #FFF);
+font-family: Poppins;
+font-size: 3rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.mainBody span{
+    color: var(--Schemes-Error, #BA1A1A);
+font-family: Poppins;
+font-size: 3rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.dateAndTime{
+    display: flex;
+padding:0;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+padding-right: 0;
+}
+
+.year{ 
+    color: #FFF;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-right: 0;
+}
+.time{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex: 1 0 0;
+}
+
+.mainBody{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+gap:-100px;
+padding:0px 64px 0px 64px;
+}
+table{
+    width: 100%;
+
+    display: flex;
+padding: 2rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+align-self: stretch;
+border-radius: 1rem;
+background: #4D4D4D;
+}
+caption{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+caption h1{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+caption button{
+    border: none;
+    outline: none;
+    display: flex;
+padding: 0.75rem 1rem;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+border-radius: 1rem;
+background: #FFF;
+}
+thead tr{
+    display: flex;
+   
+padding: 0.5rem 0rem;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 1px solid #BDBABA;
+width: 100%;
+}
+thead{
+    width: 100%;
+}
+tbody{
+    width: 100%;
+}
+th{
+    display: flex;
+align-items: center;
+gap: 0.625rem;
+flex: 1 0 0;
+color: #B0B0B0;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.table{
+    width: 100%;
+    padding: 64px;
+}
+
+tbody tr{
+    display: flex;
+padding: 0.5rem 0rem;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 1px solid #E0DEDE;
+}
+tr td{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    color: #E0DEDE;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.form{
+    display: flex;
+width: 29.8125rem;
+padding: 2rem 2rem 4rem 2rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+border-radius: 1rem;
+background: #4D4D4D;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.top{
+    display: flex;
+justify-content:space-between;
+align-items: center;
+align-self: stretch;
+}
+.top h1{
+    color: #FFF;
+font-family: Poppins;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.top button{
+    outline: none;
+    border: none;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; 
+    border-radius: 1rem;
+background: #FFF;
+color: #1E1E1E;
+font-family: Poppins;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.labelAndInput{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.2rem;
+align-self: stretch;
+}
+
+.labelAndInput label{
+    color: #E0DEDE;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+align-self: stretch;
+}
+
+.labelAndInput input{
+    display: flex;
+padding: 0.5rem 1rem;
+align-items: center;
+gap: 0.625rem;
+align-self: stretch;
+border-radius: 1rem;
+background: #FFF;
+outline: none;
+border: none;
+}
+.labelAndInput select{
+    display: flex;
+    height: 2.1875rem;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 1rem;
+background: #201C1D;
+color: #B0B0B0;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border: none;
+}
+
+body{
+    position: relative; /* Needed to keep the content above the overlay */
+    z-index: 1; /* Ensure content is above overlay */
+    
+}
+.popup{
+        position: fixed; /* Overlay must be fixed */
+        top: 0; /* Position at the top */
+        left: 0; /* Position at the left */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        z-index: 2; /* Ensure overlay is above all other content */
+        display: block; /* Initially hide the overlay */
+        display: none;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+/* Media query for devices with a width of 768px or less */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 2rem; /* Adjust padding for header */
+    }
+
+    .logo h1 {
+        font-size: 1.5rem; /* Reduce logo font size */
+    }
+
+    .mainBody h1 {
+        font-size: 2rem; /* Reduce main heading font size */
+    }
+
+    .dateAndTime {
+        flex-direction: ; /* Stack date and time */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .dateAndTime .year,
+    .dateAndTime .time {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .table {
+        padding: 32px; /* Reduce padding for the table */
+    }
+
+    caption {
+        flex-direction: column; /* Stack caption content */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .addButton {
+        margin-top: 1rem; /* Add margin to separate button */
+        width: 100%; /* Full width for button */
+    }
+
+    /* Responsive styles for form inputs */
+    .form {
+        width: 100%; /* Make form take full width */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .labelAndInput input,
+    .labelAndInput select {
+        width: 100%; /* Inputs take full width */
+        padding: 0.5rem; /* Adjust padding for inputs */
+    }
+    .mainBody span{
+        color: var(--Schemes-Error, #BA1A1A);
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: -10;
+    }
+    .mainBody{
+        margin: 2rem 0;
+    }
+}
+
+/* Media query for devices with a width of 480px or less */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack header items */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .profile {
+        margin-top: 1rem; /* Add margin to separate profile */
+    }
+
+    .mainBody {
+        padding: 0 0px; /* Adjust padding for main body */
+    }
+
+    .popup .form {
+        width: 100%; /* Make popup form full width */
+    }
+
+    th, td, {
+        font-size: 0.875rem; /* Decrease font size for table */
+    }
+
+    .tableCaption h1 {
+        font-size: 1.25rem; /* Decrease font size for caption */
+    }
+    .mainBody span{
+        color: var(--Schemes-Error, #BA1A1A);
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: -10;
+    }
+    .mainBody{
+        margin: 2rem 0;
+    }
+}
+
+/* Wrap table in a container with horizontal scrolling */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+/* Ensure the table does not shrink below 1000px */
+table {
+    min-width: 1000px; /* Set the minimum width */
+    width: 100%; /* Ensure the table takes full available width */
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    background: #4D4D4D;
+}
+
+/* Example to test the scrollbar visibility */
+thead tr,
+tbody tr {
+    display: flex;
+    width: 100%; /* Make each row fill the available space */
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding: 0.5rem 0;
+}
+

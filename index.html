@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Shelf</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>
+                Shelf<span>Wise</span>
+            </h1>
+        </div>
+        <!-- <div class="searchCon">
+            <input type="text" name="search" placeholder="Search">
+        </div>
+
+        <div class="profile">
+            <div class="profileName">
+            <h6>Arafat Hossain
+            </h6>
+            <p>Librarian</p>
+        </div>
+            <div class="img">
+            <img src="./Ellipse1912.png" alt="">
+        </div>
+        </div> -->
+    </header>
+
+<Main>
+    <div class="mainBody">
+    <h1>
+        Hello, <span>Save your favorite books and tutorials for later.</span>
+ </h1>
+
+ <div class="dateAndTime">
+    <div class="year">
+        Jan 12, 2023
+    </div>
+    <div class="time">
+        Thursday 11:30 AM
+    </div>
+
+ </div>
+</div>
+</Main>
+<section class="table">
+    <table>
+        <caption class="tableCaption">
+        <h1>Book List</h1>
+         <button class="addButton"><i class="fa-solid fa-plus"></i> Add New Book</button>
+    </caption>
+
+      <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Link</th>
+            <th></th>
+        </tr>
+      </thead>
+     
+    
+    
+    </table>
+</section>
+
+<div class="popup">
+    <div class="form">
+        <form action="">
+            <div class="top">
+            <h1>Add New Book</h1>
+            <button class="savebtn"><i class="fa-solid fa-download"></i> Save</button>
+        </div>
+        <div class="labelAndInput">
+        <label for="Title">Title:</label>
+        <input type="text" placeholder="Book name"
+        name="Title">
+    </div>
+        <div class="labelAndInput">
+        <label for="Author">Author:</label>
+        <input type="text" placeholder="Book owner"
+        name="Author">
+    </div>
+        <div class="labelAndInput">
+        <label for="Link">Link:</label>
+        <input type="text" placeholder="Book link"
+        name="Link">
+    </div>
+        <div class="labelAndInput">
+        <label for="Genre">Genre:</label>
+       <select name="Genre" id="Genre">
+        <option value="Romance">Romance</option>
+        <option value="History">History</option>
+        <option value="Academic">Academic</option>
+        <option value="Horror">Horror</option>
+        <option value="">Horror</option>
+       </select>
+    </div>
+        </form>
+    </div>
+</div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
