@@ -353,6 +353,7 @@ body{
         align-items: center;
         
     }
+    
 
 /* Media query for devices with a width of 768px or less */
 @media (max-width: 768px) {
@@ -383,14 +384,16 @@ body{
     }
 
     caption {
-        flex-direction: column; /* Stack caption content */
+        flex-direction: row; /* Stack caption content */
         align-items: flex-start; /* Align items to start */
     }
 
-    .addButton {
+
+
+    /* .addButton {
         margin-top: 1rem; /* Add margin to separate button */
-        width: 100%; /* Full width for button */
-    }
+        /* width: 100%; Full width for button
+    } */ 
 
     /* Responsive styles for form inputs */
     .form {
@@ -424,18 +427,18 @@ body{
     }
 
     .profile {
-        margin-top: 1rem; /* Add margin to separate profile */
+        margin-top: 0.5rem 1rem; /* Add margin to separate profile */
     }
 
     .mainBody {
-        padding: 0 0px; /* Adjust padding for main body */
+        padding: 1rem 1rem; /* Adjust padding for main body */
     }
 
     .popup .form {
         width: 100%; /* Make popup form full width */
     }
 
-    th, td, {
+    th, td {
         font-size: 0.875rem; /* Decrease font size for table */
     }
 
@@ -451,38 +454,42 @@ body{
     line-height: -10;
     }
     .mainBody{
-        margin: 2rem 0;
+        margin: 1rem 1rem;
+    }
+    main{
+     margin: 1rem;
     }
 }
 
-/* Wrap table in a container with horizontal scrolling */
+
+.table {
+    margin: 0.5rem 1rem;
+    width: 100%; /* Container width */
+}
+
 .table-container {
-    width: 100%;
-    overflow-x: auto; /* Enables horizontal scrolling */
+    width: 100%; /* Full width of the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
 
-/* Ensure the table does not shrink below 1000px */
 table {
-    min-width: 1000px; /* Set the minimum width */
-    width: 100%; /* Ensure the table takes full available width */
-    display: flex;
-    padding: 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    align-self: stretch;
-    border-radius: 1rem;
-    background: #4D4D4D;
+    min-width: 1000px; /* Ensure the table does not shrink below 1000px */
+    width: 100%; /* Allow the table to take full width */
+    border-collapse: collapse; /* Collapse borders for better appearance */
 }
 
-/* Example to test the scrollbar visibility */
-thead tr,
-tbody tr {
+caption {
     display: flex;
-    width: 100%; /* Make each row fill the available space */
     justify-content: space-between;
     align-items: center;
-    align-self: stretch;
-    padding: 0.5rem 0;
+    padding: 1rem;
+    font-size: 1.5rem; /* Adjust caption font size if needed */
 }
+
+
+
+
+
+
+
 
